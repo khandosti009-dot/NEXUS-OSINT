@@ -1,0 +1,96 @@
+# NEXUS OSINT Framework Requirements
+# Works on: Windows, Linux (Kali/Ubuntu), Termux, macOS
+
+# Core async HTTP client
+aiohttp>=3.8.0
+asyncio>=3.4.3
+
+# DNS Resolution
+dnspython>=2.3.0
+
+# Domain/Network tools
+whois>=0.9
+ipaddress>=1.0.23
+
+# Security scanning
+requests>=2.31.0
+urllib3>=2.0.0
+
+# Data processing
+pandas>=1.5.0
+openpyxl>=3.1.5,<3.2.0
+
+# Database
+# sqlite3 is built into Python; no package install required
+
+# Cryptography
+pycryptodome>=3.17.0
+cryptography>=40.0.0
+
+# Web scraping
+beautifulsoup4>=4.12.0
+selenium>=4.10.0  # For JavaScript-heavy sites
+
+# Image metadata
+Pillow>=9.5.0
+piexif>=1.1.3
+
+# Email tools
+email-validator>=2.0.0
+dnspython>=2.3.0
+
+# Data visualization
+matplotlib>=3.7.0
+plotly>=5.12.0
+
+# Configuration
+python-dotenv>=1.0.0
+pyyaml>=6.0
+
+# Logging
+loguru>=0.7.0
+
+# Database ORM
+sqlalchemy>=2.0.0
+
+# Performance
+aiofiles>=22.2.0
+tqdm>=4.65.0
+
+# API clients
+tweepy>=4.14.0  # Twitter
+instagrapi>=2.0.0  # Instagram
+praw>=7.7.0  # Reddit
+
+# Geo IP
+geoip2>=4.7.0
+maxminddb>=2.2.0
+
+# CLI improvements
+click>=8.1.0
+rich>=13.3.0
+
+# Proxy support
+pysocks>=1.7.1
+
+# Rate limiting
+ratelimit>=2.2.1
+backoff>=2.2.1
+
+# Machine learning for anomaly detection
+scikit-learn>=1.2.0
+numpy>=1.24.0
+
+# File handling
+python-magic>=0.4.27
+
+# Hash analysis
+ssdeep>=3.4
+
+# JSON schema validation
+jsonschema>=4.17.0
+
+# Testing (optional)
+pytest>=7.3.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0

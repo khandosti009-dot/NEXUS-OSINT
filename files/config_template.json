@@ -1,0 +1,109 @@
+{
+  "api_keys": {
+    "github_token": "",
+    "virustotal_api": "",
+    "shodan_api": "",
+    "censys_uid": "",
+    "censys_secret": "",
+    "twitter_bearer_token": "",
+    "instagram_session": "",
+    "telegram_bot_token": "",
+    "discord_bot_token": "",
+    "abuseipdb_api": "",
+    "ipqualityscore_api": "",
+    "whoisxml_api": ""
+  },
+  "proxy": {
+    "enabled": false,
+    "http": "http://127.0.0.1:8080",
+    "https": "https://127.0.0.1:8080",
+    "username": "",
+    "password": "",
+    "socks5": ""
+  },
+  "database": {
+    "type": "sqlite",
+    "sqlite_path": "osint_data.db",
+    "postgresql_url": "postgresql://user:password@localhost:5432/osint",
+    "mongodb_url": "mongodb://localhost:27017/osint",
+    "backup_enabled": true,
+    "backup_interval_hours": 24
+  },
+  "settings": {
+    "timeout": 10,
+    "max_threads": 10,
+    "max_retries": 3,
+    "retry_delay_seconds": 2,
+    "cache_enabled": true,
+    "cache_ttl_hours": 24,
+    "cache_type": "json",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "verify_ssl": true,
+    "follow_redirects": true,
+    "log_level": "INFO",
+    "rate_limit_requests_per_second": 5
+  },
+  "output": {
+    "format": "json",
+    "save_directory": "./results/",
+    "include_timestamp": true,
+    "compression": false,
+    "beautify_json": true,
+    "export_formats": ["json", "csv", "html"]
+  },
+  "email": {
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "sender_email": "",
+    "sender_password": "",
+    "notifications_enabled": false,
+    "notify_on_findings": true
+  },
+  "social_media": {
+    "platforms_to_check": [
+      "github", "twitter", "instagram", "facebook", "linkedin",
+      "youtube", "reddit", "tiktok", "twitch", "snapchat",
+      "pinterest", "telegram", "discord", "medium", "patreon"
+    ],
+    "extended_search": false
+  },
+  "network": {
+    "port_scan_timeout": 2,
+    "common_ports": [
+      21, 22, 23, 25, 53, 80, 110, 143, 443, 465,
+      587, 993, 995, 3306, 3389, 5432, 5900, 8080,
+      8443, 9200, 27017, 28017, 6379, 8888
+    ],
+    "aggressive_scan_ports": [1, 65535],
+    "udp_scan_enabled": false
+  },
+  "web_scraping": {
+    "max_page_size_mb": 10,
+    "extract_emails": true,
+    "extract_phone_numbers": true,
+    "extract_social_links": true,
+    "depth_limit": 3,
+    "follow_robots_txt": true
+  },
+  "github": {
+    "search_forks": false,
+    "search_archived": false,
+    "min_stars": 0,
+    "include_user_repos": true
+  },
+  "threat_intelligence": {
+    "virustotal_check_files": true,
+    "virustotal_check_urls": true,
+    "urlscan_enabled": true,
+    "abuseipdb_enabled": false,
+    "phishing_database_enabled": true
+  },
+  "advanced": {
+    "ml_anomaly_detection": true,
+    "pattern_recognition": true,
+    "timeline_analysis": true,
+    "correlation_engine": true,
+    "batch_processing": true,
+    "parallel_requests": true
+  }
+}
